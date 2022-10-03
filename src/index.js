@@ -40,8 +40,8 @@ function createCountryList(countries) {
     .map(country => {
       return `<li>
         <img src="${country.flags.svg}" alt="Flag of ${country.name.official}" width="30" hight="20">
-           <span><b>${country.name.official}</b></span>
-                  </li>`;
+        <span><b>${country.name.official}</b></span>
+        </li>`;
     })
     .join('');
     countryList.innerHTML = markup;
@@ -61,13 +61,13 @@ function createCountry(countries) {
     .map(country => {
       return `<li>
         <img src="${country.flags.svg}" alt="Flag of ${
-        country.name.official
-      }" width="30" hight="20">
-           <span class="country-name"><b>${country.name.official}</b></span>
-              <p><b>Capital</b>: ${country.capital}</p>
-              <p><b>Population</b>: ${country.population}</p>
-              <p><b>Languages</b>: ${Object.values(country.languages)} </p>
-                  </li>`;
+          country.name.official
+    }" width="30" hight="20">
+        <span class="country-name"><b>${country.name.official}</b></span>
+        <p><b>Capital</b>: ${country.capital}</p>
+        <p><b>Population</b>: ${country.population}</p>
+        <p><b>Languages</b>: ${Object.values(country.languages)} </p>
+        </li>`;
     })
     .join('');
     countryList.innerHTML = markup;
