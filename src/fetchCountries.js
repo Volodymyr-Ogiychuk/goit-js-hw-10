@@ -7,5 +7,6 @@ export const fetchCountries = inputValue => {
             }
             return response.json();
         }
-        );
+    )
+        
 };
